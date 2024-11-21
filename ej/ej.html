@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favorite Music Video</title>
+  <link rel="stylesheet" href="ej.css">
+  <style>
+    /* Hide video section initially */
+    #VIDEO {
+      display: none;
+      align-items: center;
+    }
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+    .center button {
+      padding: 10px 20px;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Initial Section -->
+  <div id="welcome-screen" class="center">
+   
+    <button id="start-btn">Click Me</button>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+      <div class="logo">MY FAVORITE</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#VIDEO">VIDEO</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <form>
+          <input type="text" placeholder="Search" aria-label="Search">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- Background Section -->
+  <main>
+    <section id="VIDEO">
+      <h1>DIE WITH A SMILE</h1>
+      
+      <!-- Video Player -->
+      <div class="video-player">
+        <video controls width="640">
+          <source src="C:\Users\myren\Desktop\meh ej\Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video).mp4" type="video/mp4">
+          Your browser does not support the video element.
+        </video>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // JavaScript to handle button click
+    document.getElementById('start-btn').addEventListener('click', function() {
+      // Hide welcome screen
+      document.getElementById('welcome-screen').style.display = 'none';
+
+      // Show video section
+      document.getElementById('VIDEO').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
