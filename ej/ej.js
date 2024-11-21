@@ -1,4 +1,4 @@
-// JavaScript to handle video interaction
+
 document.addEventListener("DOMContentLoaded", () => {
     const playButton = document.getElementById("play-video");
     const videoElement = document.getElementById("video-element");
